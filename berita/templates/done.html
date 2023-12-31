@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Atribut data pada html </title>
-</head>
-<body>
-    <div data-ukuran-kaos="XL" id="kaos">Muhammad Thohir</div>
-    <br>
-    <button onclick="getSizeShirt()">ukuran kaos</button>
-    
-    <script>
-        function getSizeShirt(){
-            var kaos = document.getElementById('kaos');
-            var fruitCount = kaos.getAttribute('data-ukuran-kaos');
-            alert(fruitCount);
-        }
-        
-    </script>
-</body>
-</html>
+<!-- done.html -->
+<form method="post" action="{% url 'add_item' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Tambah Item</button>
+  </form>
