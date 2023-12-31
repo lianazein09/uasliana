@@ -1,17 +1,17 @@
 {% load static %}
 <!DOCTYPE html> 
 <html lang="en"> 
-<head> 
+<head>    
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
-    <link rel="stylesheet" href="style.css"> 
-    <title >lian </title> 
+    <link href=style.css rel=stylesheet type=text/css> 
+    <title>lian </title> 
 </head> 
-<body> 
+<body style="background-color:#f6a2dd;"></body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> 
             <div class="container"> 
-              <a class="navbar-brand" href="#"><span class="text-warning">Breaking</span>News</a> 
+              <a class="navbar-brand" href="#"><span class="text-warning">Happy</span>Shopping</a> 
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
                 <span class="navbar-toggler-icon"></span> 
               </button> 
@@ -37,13 +37,10 @@
 		  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 			<div class="carousel-inner">
 			  <div class="carousel-item active">
-				<img src="https://id.pinterest.com/pin/1119214944883811878/" class="d-block w-100" alt="...">
+          <img src="https://1.bp.blogspot.com/-GpeLys-Zs_o/YMGLRmgCtcI/AAAAAAAA1c0/LCW3fryesAU6ygsvfTFyKucWPKdn3mtJwCLcBGAsYHQ/s2048/Scarlett%2BWhitening%2BFace%2BCare.jpg" width="30"  height="400" class="d-block w-100" alt="..."></img>
 			  </div>
 			  <div class="carousel-item">
-				<img src="static/images/bukhur.jpg" class="d-block w-100" alt="...">
-			  </div>
-			  <div class="carousel-item">
-				<img src="static/images/programmer.jpg" class="d-block w-100" alt="...">
+				  <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//catalog-image/105/MTA-122838089/no-brand_no-brand_full01.jpg" width="1250"  height="400" class="d-block w-100" alt="..."></img>
 			  </div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -55,5 +52,38 @@
 			  <span class="visually-hidden">Next</span>
 			</button>
 		  </div>
-</body> 
+    </body>
+  <head>
+  <h1 style="background-color:#f4eff3;"><marquee>PLEASE ADD THE DATA OF CLIENT</marquee></h1>
+  <form method="post" action="detailberita.html">
+    <table cellpadding="8">
+      <tr>
+        <td>NIK</td>
+        <td><input type="text" name="NIK"></td>
+      </tr>
+      <tr>
+        <td>Nama</td>
+        <td><input type="text" name="Nama"></td>
+      </tr>
+      <tr>
+        <td>Jenis Kelamin</td>
+        <td>
+        <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+        <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+        </td>
+      </tr>
+      <tr>
+        <td>Telepon</td>
+        <td><input type="text" name="telp"></td>
+      </tr>
+      <tr>
+        <td>Alamat</td>
+        <td><textarea name="alamat"></textarea></td>
+      </tr>
+    </table>
+    <hr>
+    <input type="submit" value="Simpan">
+    <a href="index.php"><input type="button" value="Batal"></a>
+  </form>
+</head>
 </html>

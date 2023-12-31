@@ -1,31 +1,29 @@
-{% load static %} 
-<!DOCTYPE html> 
-<html> 
-    <head> 
-        <title>penmu</title> 
- 
-        <link rel="stylesheet" type="text/css" href="{% static 'asri/css/styles.css' %}"> 
-    </head> 
- 
-    <body> 
-        <div class="container"> 
-            <h1>Opini</h1> 
-            <h2>Pengaruh Santri dalam Politik</h2> 
-     
-            <img src="{% static 'asri/images/jihad.jpg' %}" alt="Fotoku" width="50%"> 
- 
-            <p>  Dari tema yang diangkat disini saya memiliki beberapa pendapat diantaranya, kalimat politisi dan kalimat santri keduanya dua kalimat berbeda namun memiliki makna yang sama. Artinya mereka sama-sama memiliki pengaruh besar terhadap masyarakat atau umat, bahkan bukan hanya umat tetapi Negara. 
-                Kalimat politisi sendiri kalau dilihat dari sudut pandang politik dia adalah seseorang yang ahli dalam bidang politik, politisi ini sangat berpengaruh bagi masyarakat. Bahkan masyarakat banyak menggantungkan kepentingan terbaik mereka terhadap seseorang yang ahli dalam bidang politik. Namun disini kami sangat membutuhkan politisi yang jujur, adil, dan tidak mementingkan kepentingan sendiri. 
-                Sedangkan santri sangat berpengaruh terhadap masyarakat terlebih terhadap Negara. Banyak masyarakat mengikuti jejak dari para santri. Seorang santrilah yang memerdekakan Negara kita, Negara Indonesia.  
-              
-            Dari pemaparan atrumen saya diatas, saya memiliki dua pendapat dari dua kalimat berbeda tetapi memiliki makna yang sama. 
-             Disatukan dua kalimat tersebut saya menyimpulkan bahwa kita membutuhkan seorang tokoh masyarakat yang bisa kita sebut sebagai santri. Dia yang jujur dalam mengayomi masyarakat, dia yang bertanggung jawab terhadap apa yang dia lakukan. Mayoritas masyarakat lebih mengikuti perilaku santri dari pada non santri. Jadi kita seorang santri harus memiliki budi pekerti yang baik. Jadi kita sebagai santri harus bisa melakukan apa yang kita ucapkan. Karena mayoritas masyarakat lebih mengikuti perilaku/Tindakan dari pada ucapan. 
-             Ditinjau dari situasi kondisi Negara kita di Negara Indonesia ini akan mengadakan pilpres. Banyak dari pada calon pilpres mengatasnamakan (politisi santri), mereka mengandalkan politik dengan santri supaya bisa menarik hati masyarakat agar memilih calon tersebut. 
-            Pesan dari saya: Seorang santri terlebih Kyai memiliki efek besar terhadap masyarakat. Jadi mari kita buka mata buka hati kita agar Kyai dan santri tidak dipermainkan dalam sistem pemilu yang bersifat semata. 
-             
- 
- 
-            </p> 
-        </div> 
-             
-    </body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title> menyimpan data JSON di Atribut data</title>
+</head>
+<body>
+    <ul>
+        <li data-orang='
+            {
+            "nama": "Muhammad Thohir",
+            "ukuranKaos": "XL"
+            }
+            '>Data Rahasia</li>
+    </ul>
+    <br>
+    <button onclick="getSizeShirt()">ukuran kaos</button>
+
+    <script>
+        function getSizeShirt() {
+            var el = document.querySelector("li");
+            var json = el.dataset.orang;
+            var data = JSON.parse(json);
+
+            alert(data.nama + "\n" + data.ukuranKaos);
+        }
+
+    </script>
+</body>
+</html>
