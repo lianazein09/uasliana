@@ -1,29 +1,58 @@
+{% load static %} 
 <!DOCTYPE html>
-<html>
-<head>
-    <title> menyimpan data JSON di Atribut data</title>
-</head>
-<body>
-    <ul>
-        <li data-orang='
-            {
-            "nama": "Muhammad Thohir",
-            "ukuranKaos": "XL"
-            }
-            '>Data Rahasia</li>
-    </ul>
-    <br>
-    <button onclick="getSizeShirt()">ukuran kaos</button>
-
-    <script>
-        function getSizeShirt() {
-            var el = document.querySelector("li");
-            var json = el.dataset.orang;
-            var data = JSON.parse(json);
-
-            alert(data.nama + "\n" + data.ukuranKaos);
-        }
-
-    </script>
-</body>
-</html>
+<html lang="en"> 
+<head>    
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+    <link href=style.css rel=stylesheet type=text/css> 
+    <title>Scarlett </title> 
+</head>  
+<html> 
+    <head> 
+        <body style="background-image: url('https://asset-2.tstatic.net/shopping/foto/bank/images2/felicya-angelista-dengan-produk-best-sellernya-scarlett.jpg')"></body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> 
+            <div class="container"> 
+              <a class="navbar-brand" href="#"><span class="text-warning">Happy</span>Shopping</a> 
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+              </button> 
+              <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="{% url 'berita' %}">SKINCARE</a> 
+                  </li> 
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="{% url 'detailberita' %}">Skintific</a> 
+                  </li> 
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="{% url 'isiberita' %}">Scarlett</a> 
+                  </li> 
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="{% url 'done' %}">MS Glow</a> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div> 
+          </nav> 
+    </head> 
+ 
+    <body> 
+        <div class="container"> 
+     
+            <img src="https://imgx.parapuan.co/crop/0x0:0x0/x/photo/2022/06/25/scarlett-age-delay-package-1jpe-20220625065959.jpeg" alt="" width="50%"> 
+            <img src="            https://berita.99.co/wp-content/uploads/2023/09/urutan-skincare-scarlett.jpg" alt="" width="35%"> 
+            <h1> S C A R L E T T</h1>
+            <p>  SCARLETT adalah brand kecantikan lokal dengan pertumbuhan tercepat di Indonesia yang didirikan pada 2017 oleh Felicya Angelista. SCARLETT mengeluarkan berbagai jenis produk kecantikan yang berfokus untuk mencerahkan dan menjaga kesehatan kulit, baik untuk tubuh, wajah, maupun rambut. Dengan “Reveal Your Beauty”, SCARLETT menjadi solusi yang dapat meningkatkan kepercayaan diri Sahabat Scarlett untuk berani mengungkapkan kecantikan dengan versi masing-masing.</p>
+            <h2 style="background-color:#ebedf0;">SILAHKAN KLIK LINK DIBAWAH UNTUK MELAKUKAN PEMBELIAN</h2>
+            <a style="background-color:rgb(21, 134, 226);" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjxm5H737mDAxXvpWYCHb9cAIsYABAMGgJzbQ&ase=2&gclid=Cj0KCQiAv8SsBhC7ARIsALIkVT0Y49N7TW--6mr1DnnxSlxuPlyizRJh_hVlCI9tcMQeGCnVz50C32AaAq0JEALw_wcB&ohost=www.google.com&cid=CAESVeD2825uXup7YFPxayHugAnEx-vViCBc3dmkNGHnSpvLbNBufXOhCWChFXtmgW6wE5KN8Uc9-7g1q7hYIBnGVvHmCR2E3qOnh5ddI4jxq_a6GAGGXIc&sig=AOD64_1wAe7CLIQ7znj6uA22aP4l-T9Yyg&ctype=5&q=&nis=4&ved=2ahUKEwikuoz737mDAxVWT2wGHceVATsQ9aACKAB6BAgHEA8&adurl="><li>MOISTURIZER</li></a></a> 
+            <a style="background-color:rgb(21, 134, 226);" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjxm5H737mDAxXvpWYCHb9cAIsYABAIGgJzbQ&ase=2&gclid=Cj0KCQiAv8SsBhC7ARIsALIkVT2G-brHDbeaEyrp7MN7xqVYcnv5roDPxnuAdiQ2hP_pa8B_zWjkLSgaAvgbEALw_wcB&ohost=www.google.com&cid=CAESVeD2825uXup7YFPxayHugAnEx-vViCBc3dmkNGHnSpvLbNBufXOhCWChFXtmgW6wE5KN8Uc9-7g1q7hYIBnGVvHmCR2E3qOnh5ddI4jxq_a6GAGGXIc&sig=AOD64_0lP2xbnoAqF7vBNYvy-LAzQ_9L6Q&ctype=5&q=&nis=4&ved=2ahUKEwikuoz737mDAxVWT2wGHceVATsQ9aACKAB6BAgHEBo&adurl="><li>FACE MASK</li></a></a> 
+            <a style="background-color:rgb(21, 134, 226);" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjxm5H737mDAxXvpWYCHb9cAIsYABAPGgJzbQ&ase=2&gclid=Cj0KCQiAv8SsBhC7ARIsALIkVT3seqvaK7JlIbo82mdb_77n8StgsfzWL3zM5_7pN6Jd3oAIDzdQfHcaAnBBEALw_wcB&ohost=www.google.com&cid=CAESVeD2825uXup7YFPxayHugAnEx-vViCBc3dmkNGHnSpvLbNBufXOhCWChFXtmgW6wE5KN8Uc9-7g1q7hYIBnGVvHmCR2E3qOnh5ddI4jxq_a6GAGGXIc&sig=AOD64_0H56dt_zClHKuhUgRAdWmx0Yv2fw&ctype=5&q=&nis=4&ved=2ahUKEwikuoz737mDAxVWT2wGHceVATsQ9aACKAB6BAgHEDA&adurl="><li>CUSHION</li></a></a> 
+            <a style="background-color:rgb(21, 134, 226);" href="https://www.google.com/url?url=https://shopee.co.id/product/20905897/21386151713&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwjh9OaN4rmDAxWWUGwGHV1PDVEQgOUECK8I&usg=AOvVaw1-zX11yWGeSg7qURuKfCR2"><li>SERUM</li></a></a> 
+            <a style="background-color:rgb(21, 134, 226);" href="https://www.google.com/url?url=https://shopee.co.id/product/75961259/20453677519&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwjh9OaN4rmDAxWWUGwGHV1PDVEQgOUECI8K&usg=AOvVaw17FlGUTbF8xzDO_nL9k2zh"><li>CLEANSING</li></a></a> 
+            <a style="background-color:rgb(21, 134, 226);" href="https://www.google.com/url?url=https://shopee.co.id/product/101515123/21483952791&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwjh9OaN4rmDAxWWUGwGHV1PDVEQgOUECNcK&usg=AOvVaw1aIwHDyHEce2BKkB7l15l3"><li>SKINTIFIC SET 5Pcs</li></a></a> 
+            <a style="background-color:rgb(21, 134, 226);" href="{% url 'berita' %}"><input type="reset" name="button"></a>
+        </div> 
+             
+    </body>
