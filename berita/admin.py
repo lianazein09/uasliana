@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Berita, Kategori
+from .models import Berita, Kategori, klinik
 
 # Register your models here.
 class BeritaAdmin(admin.ModelAdmin):
@@ -9,3 +9,4 @@ class BeritaAdmin(admin.ModelAdmin):
 
 admin.site.register(Berita, BeritaAdmin)
 admin.site.register(Kategori)
+admin.site.register(klinik)
