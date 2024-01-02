@@ -24,5 +24,6 @@ urlpatterns = [
     path('detailberita/', detailberita, name='detailberita'),
     path('isiberita/', isiberita, name='isiberita'),
     path('done/', done, name='done'),
+    path('formberita/', formberita, name='formberita'),
     path('admin/', admin.site.urls),
 ]

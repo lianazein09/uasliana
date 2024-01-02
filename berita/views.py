@@ -18,3 +18,9 @@ def isiberita(request):
 def done(request):
     template = loader.get_template('done.html')
     return HttpResponse (template.render())
+
+def formberita(request):
+    template = loader.get_template('formberita.html')
+    return render (request,'formberita.html')
+
+
