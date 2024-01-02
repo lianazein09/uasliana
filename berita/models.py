@@ -24,3 +24,7 @@ class klinik(models.Model):
     def __str__(self):
         return f"{self.nama_klinik}"
 
+class Member(models.Model):
+    nama=models.CharField(max_length=100)
+    alamat=models.CharField(max_length=100)
+    usia=models.CharField(max_length=100)

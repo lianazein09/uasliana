@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style-crud.css' %}">
+</head>
+<body>
+    <div class="container-update ">
+        <div class="container2">
+            <h1>Update Member</h1>
+            <br>
+            <form action="{% url 'uprec' mem.id %}" method="post">
+                {% csrf_token %}
+                <label for="">Nama</label><br><br>
+                <input type="text" name="nama" value="{{mem.nama}}"><br><br>
+                <label for="">Alamat</label><br><br>
+                <input type="text" name="alamat" value="{{mem.alamat}}"><br><br>
+                <label for="">Usia</label><br><br>
+                <input type="text" name="usia" value="{{mem.usia}}"><br><br>
+                <button type="submit" id="new1">Update</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

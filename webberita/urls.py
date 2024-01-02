@@ -20,7 +20,13 @@ from berita.views import *
 
 urlpatterns = [
     path('', include('berita.urls')),
-    path('berita/', berita, name='berita'),
+    path('', berita, name='berita'),
+    path('add/', add, name='add'),
+    path('addrec/', addrec, name='addrec'),
+    path('delete/<int:id>/', delete, name='delete'), 
+    path('update/<int:id>/',update,name='update'),
+    path('update/uprec/<int:id>/',uprec,name='uprec'),
+
     path('detailberita/', detailberita, name='detailberita'),
     path('isiberita/', isiberita, name='isiberita'),
     path('done/', done, name='done'),
